@@ -6,7 +6,7 @@ This repository is for studying design pattern and practicing with java source c
 |------------------|------------------------------------------------------------------------------------------------------------------------------|------|
 | Singleton        | 	The singleton pattern restricts the initialization of a class to ensure that only one instance of the class can be created. |      |
 | Factory	         | The factory pattern takes out the responsibility of instantiating a object from the class to a Factory class.                |      |
-| Abstract Factory | Allows us to create a Factory for factory classes.                                                                           |      |
+| Abstract Factory | Allows us to create a Factory for factory classes.                                                                           |  ✅   |
 | Builder	         | Creating an object step by step and a method to finally get the object instance.                                             | ✅    |
 | Prototype	       | Creating a new object instance from another similar instance and then modify according to our requirements.                  |      |
 
@@ -15,11 +15,11 @@ This repository is for studying design pattern and practicing with java source c
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------|
 | Adapter      | 	Provides an interface between two unrelated entities so that they can work together.                                                            |      |
 | Composite    | 	Used when we have to implement a part-whole hierarchy. For example, a diagram made of other pieces such as circle, square, triangle, etc.       |      |
-| Proxy        | 	Provide a surrogate or placeholder for another object to control access to it.                                                                  |      |
+| Proxy        | 	Provide a surrogate or placeholder for another object to control access to it.                                                                  | ✅    |
 | Flyweight    | 	Caching and reusing object instances, used with immutable objects. For example, string pool.                                                    |      |
 | Facade       | 	Creating a wrapper interfaces on top of existing interfaces to help client applications.                                                        |      |
 | Bridge       | 	The bridge design pattern is used to decouple the interfaces from implementation and hiding the implementation details from the client program. |      |
-| Decorator	   | The decorator design pattern is used to modify the functionality of an object at runtime.                                                        |      |
+| Decorator	   | The decorator design pattern is used to modify the functionality of an object at runtime.                                                        | ✅    |
 
 
 
