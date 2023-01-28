@@ -1,4 +1,4 @@
-package m.falcon.designpattern.domain.game;
+package m.falcon.designpattern.createpattern.domain.game;
 
 public interface GameService {
     void loadGame() throws InterruptedException;

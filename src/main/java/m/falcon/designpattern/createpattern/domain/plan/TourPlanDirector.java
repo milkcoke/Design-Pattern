@@ -1,4 +1,4 @@
-package m.falcon.designpattern.domain.plan;
+package m.falcon.designpattern.createpattern.domain.plan;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

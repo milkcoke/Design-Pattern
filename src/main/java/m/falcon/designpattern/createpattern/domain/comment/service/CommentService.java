@@ -1,4 +1,4 @@
-package m.falcon.designpattern.domain.comment.service;
+package m.falcon.designpattern.createpattern.domain.comment.service;
 
 // Component
 public interface CommentService {

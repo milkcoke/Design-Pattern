@@ -1,5 +1,9 @@
 package m.falcon.designpattern.domain.ship;
 
+import m.falcon.designpattern.createpattern.domain.ship.BlackShipFactory;
+import m.falcon.designpattern.createpattern.domain.ship.Client;
+import m.falcon.designpattern.createpattern.domain.ship.Ship;
+import m.falcon.designpattern.createpattern.domain.ship.WhiteShipFactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

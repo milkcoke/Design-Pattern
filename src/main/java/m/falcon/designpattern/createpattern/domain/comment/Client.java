@@ -1,8 +1,8 @@
-package m.falcon.designpattern.domain.comment;
+package m.falcon.designpattern.createpattern.domain.comment;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import m.falcon.designpattern.domain.comment.service.CommentService;
+import m.falcon.designpattern.createpattern.domain.comment.service.CommentService;
 import org.springframework.stereotype.Component;
 
 @Component

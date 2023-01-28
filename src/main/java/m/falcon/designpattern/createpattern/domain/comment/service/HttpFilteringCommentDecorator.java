@@ -1,4 +1,4 @@
-package m.falcon.designpattern.domain.comment.service;
+package m.falcon.designpattern.createpattern.domain.comment.service;
 
 public class HttpFilteringCommentDecorator extends CommentDecorator {
     public HttpFilteringCommentDecorator(CommentService commentService) {

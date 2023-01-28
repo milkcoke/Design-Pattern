@@ -1,4 +1,4 @@
-package m.falcon.designpattern.domain.game;
+package m.falcon.designpattern.createpattern.domain.game;
 
 import lombok.AccessLevel;
 import lombok.Getter;

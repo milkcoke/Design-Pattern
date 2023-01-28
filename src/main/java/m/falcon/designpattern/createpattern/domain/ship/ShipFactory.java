@@ -1,4 +1,4 @@
-package m.falcon.designpattern.domain.ship;
+package m.falcon.designpattern.createpattern.domain.ship;
 
 public interface ShipFactory {
 

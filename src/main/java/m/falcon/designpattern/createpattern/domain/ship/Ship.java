@@ -1,9 +1,9 @@
-package m.falcon.designpattern.domain.ship;
+package m.falcon.designpattern.createpattern.domain.ship;
 
 import lombok.Getter;
 
 @Getter
-abstract class Ship {
+public abstract class Ship {
     private String name;
     private String color;
     private String logo;

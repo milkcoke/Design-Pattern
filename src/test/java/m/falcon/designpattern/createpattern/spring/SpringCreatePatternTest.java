@@ -1,4 +1,4 @@
-package m.falcon.designpattern.create.spring;
+package m.falcon.designpattern.createpattern.spring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.web.util.UriComponentsBuilder;
