@@ -1,9 +1,10 @@
 package m.falcon.designpattern.domain.comment;
 
-import m.falcon.designpattern.domain.comment.service.CommentService;
-import m.falcon.designpattern.domain.comment.service.DefaultCommentService;
-import m.falcon.designpattern.domain.comment.service.HttpFilteringCommentDecorator;
-import m.falcon.designpattern.domain.comment.service.TrimmingCommentDecorator;
+import m.falcon.designpattern.createpattern.domain.comment.Client;
+import m.falcon.designpattern.createpattern.domain.comment.service.CommentService;
+import m.falcon.designpattern.createpattern.domain.comment.service.DefaultCommentService;
+import m.falcon.designpattern.createpattern.domain.comment.service.HttpFilteringCommentDecorator;
+import m.falcon.designpattern.createpattern.domain.comment.service.TrimmingCommentDecorator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
