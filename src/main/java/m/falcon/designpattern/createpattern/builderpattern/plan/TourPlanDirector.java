@@ -1,18 +1,14 @@
-package m.falcon.designpattern.domain.plan;
+package m.falcon.designpattern.createpattern.builderpattern.plan;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
 @Component
+@RequiredArgsConstructor
 public class TourPlanDirector {
     private final TourPlanBuilder tourPlanBuilder;
-
-    @Autowired
-    public TourPlanDirector(TourPlanBuilder tourPlanBuilder) {
-        this.tourPlanBuilder = tourPlanBuilder;
-    }
 
     public TourPlan createHawaiiPackageTourPlan(LocalDate startDate, LocalDate endDate) {
         return this.tourPlanBuilder

@@ -1,4 +1,4 @@
-package m.falcon.designpattern.domain.plan;
+package m.falcon.designpattern.createpattern.builderpattern.plan;
 
 import lombok.AccessLevel;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package m.falcon.designpattern.domain.plan;
+package m.falcon.designpattern.createpattern.builderpattern.plan;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -48,4 +48,10 @@ public class TourPlan {
         this.stayPlace = stayPlace;
     }
 
+    @Override
+    public String toString() {
+        return "title : " + this.title + "\n" +
+                "start date:  " + this.startDate + "\n"
+                + "endDate: " + this.endDate;
+    }
 }
