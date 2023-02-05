@@ -1,5 +1,7 @@
 package m.falcon.designpattern.domain.game;
 
+import m.falcon.designpattern.createpattern.domain.game.DefaultGameService;
+import m.falcon.designpattern.createpattern.domain.game.GameServiceProxy;
 import org.junit.jupiter.api.Test;
 
 class GameServiceTest {
