@@ -2,6 +2,7 @@ package m.falcon.designpattern.createpattern.factory;
 
 import m.falcon.designpattern.createpattern.domain.ship.Anchor;
 import m.falcon.designpattern.createpattern.domain.ship.BlackPremiumAnchor;
+import m.falcon.designpattern.createpattern.domain.ship.BlackPremiumWheel;
 import m.falcon.designpattern.createpattern.domain.ship.Wheel;
 
 public class BlackShipPremiumPartsFactory implements ShipPartsFactory {

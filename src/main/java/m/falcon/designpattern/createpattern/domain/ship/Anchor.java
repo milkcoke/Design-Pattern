@@ -1,5 +1,7 @@
 package m.falcon.designpattern.createpattern.domain.ship;
 
-public interface Anchor {
-  void stop();
+public abstract class Anchor {
+  public void stop() {
+    System.out.println("Stopped by " + this.getClass().getSimpleName());
+  };
 }

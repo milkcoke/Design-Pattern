@@ -1,3 +1,3 @@
 package m.falcon.designpattern.createpattern.domain.ship;
 
-public class BlackPremiumAnchor extends Anchor { }
+public class BlackPremiumWheel extends Wheel { }
