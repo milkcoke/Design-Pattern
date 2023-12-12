@@ -1,4 +1,4 @@
-package m.falcon.designpattern.createpattern.factory;
+package m.falcon.designpattern.createpattern.domain.ship;
 
 import m.falcon.designpattern.createpattern.domain.ship.Wheel;
 
