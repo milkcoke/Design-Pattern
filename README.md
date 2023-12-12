@@ -5,10 +5,16 @@ This repository is for studying design pattern and practicing with java source c
 | Pattern Name     | 	Description                                                                                                                 | Done | 
 |------------------|------------------------------------------------------------------------------------------------------------------------------|------|
 | Singleton        | 	The singleton pattern restricts the initialization of a class to ensure that only one instance of the class can be created. |      |
-| Factory	         | The factory pattern takes out the responsibility of instantiating a object from the class to a Factory class.                |      |
-| Abstract Factory | Allows us to create a Factory for factory classes.                                                                           |  ✅   |
+| Factory method   | Create concrete class by concrete factory class' method. Separating concrete factory classes.                                |      |
+| Abstract Factory | Inject dependency of concrete partial class on concrete factory class for instantiating concrete partial classes like VO     | ✅    |
 | Builder	         | Creating an object step by step and a method to finally get the object instance.                                             | ✅    |
 | Prototype	       | Creating a new object instance from another similar instance and then modify according to our requirements.                  |      |
+
+#### Factory method vs Abstract Factory
+- Factory method focus on how to implement the concrete factory for creating domain subtype class. \
+Being used for moving creating process from domain class to subtype factory class.
+- Abstract method focus how to use concrete factory for separating and providing dynamically class. \
+Being used for creating subtype by partial factory class not knowing concrete subtype class
 
 ## Structure Pattern
 | Pattern Name | 	Description                                                                                                                                     | Done |
@@ -24,8 +30,8 @@ This repository is for studying design pattern and practicing with java source c
 ## Behavior Pattern
 | Pattern Name	           | Description                                                                                                                                      | Done |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| Template Method         | 	Used to create a template method stub and defer some of the steps of implementation to the subclasses.                                          ||
-| Mediator	               | Used to provide a centralized communication medium between different objects in a system.                                                        ||
+| Template Method         | 	Used to create a template method stub and defer some of the steps of implementation to the subclasses.                                          |      |
+| Mediator	               | Used to provide a centralized communication medium between different objects in a system.                                                        |      |
 | Chain of Responsibility | 	Used to achieve loose coupling in software design where a request from the client is passed to a chain of objects to process them.              | ✅    |
 | Observer	               | Useful when you are interested in the state of an object and want to get notified whenever there is any change.                                  |      |
 | Strategy	               | Strategy pattern is used when we have multiple algorithm for a specific task and client decides the actual implementation to be used at runtime. |      |
