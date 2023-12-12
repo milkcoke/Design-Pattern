@@ -1,8 +1,8 @@
 package m.falcon.designpattern.createpattern.builderpattern;
 
-import m.falcon.designpattern.createpattern.builderpattern.plan.CalendarTourBuilder;
-import m.falcon.designpattern.createpattern.builderpattern.plan.TourPlan;
-import m.falcon.designpattern.createpattern.builderpattern.plan.TourPlanDirector;
+import m.falcon.designpattern.createpattern.builder.CalendarTourBuilder;
+import m.falcon.designpattern.createpattern.builder.TourPlan;
+import m.falcon.designpattern.createpattern.builder.TourPlanDirector;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
