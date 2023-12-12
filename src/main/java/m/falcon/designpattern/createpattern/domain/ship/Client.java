@@ -1,6 +1,7 @@
 package m.falcon.designpattern.createpattern.domain.ship;
 
 import lombok.Getter;
+import m.falcon.designpattern.createpattern.factory.ShipFactory;
 
 @Getter
 public class Client {

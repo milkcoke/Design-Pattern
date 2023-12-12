@@ -1,26 +1,25 @@
 package m.falcon.designpattern.createpattern.domain.ship;
 
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 @Getter
+@RequiredArgsConstructor(access = AccessLevel.PROTECTED)
 public abstract class Ship {
-    private String name;
-    private String color;
-    private String logo;
+    private final String name;
+    private final String color;
+    private final String logo;
 
-    protected Ship(String name) {
-        this.name = name;
+    private final Wheel wheel;
+    private final Anchor anchor;
+
+
+    public void moveShip() {
+        this.wheel.move();
     }
 
-    protected Ship(String name, String color, String logo) {
-        this.name = name;
-        this.color = color;
-        this.logo = logo;
-    }
-
-    void changeShipInfo(String name, String color, String logo) {
-        this.name = name;
-        this.color = color;
-        this.logo = logo;
+    public void stopShip() {
+        this.anchor.stop();
     }
 }

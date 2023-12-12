@@ -1,17 +1,20 @@
-package m.falcon.designpattern.createpattern.domain.ship;
+package m.falcon.designpattern.createpattern.factory;
+
+import m.falcon.designpattern.createpattern.domain.ship.Client;
+import m.falcon.designpattern.createpattern.domain.ship.Ship;
 
 public interface ShipFactory {
 
     default Ship orderShip(Client client, String orderShipName) {
         validateClient(client);
         validateShipName(orderShipName);
-        Ship ship = createShip();
+        Ship ship = create();
         sendEmailToClient(client.getEmail(), ship);
 
         return ship;
     }
 
-    Ship createShip();
+    Ship create();
 
     private void validateClient(Client client) {
         if (client.getName() == null || client.getName().isBlank()) {
