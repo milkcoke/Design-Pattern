@@ -1,4 +1,4 @@
-package m.falcon.designpattern.behavior.strategy.asis;
+package m.falcon.designpattern.behavior.strategy.asis.light;
 
 import lombok.RequiredArgsConstructor;
 

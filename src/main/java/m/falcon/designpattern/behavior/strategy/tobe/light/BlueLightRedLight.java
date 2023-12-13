@@ -1,4 +1,4 @@
-package m.falcon.designpattern.behavior.strategy.tobe;
+package m.falcon.designpattern.behavior.strategy.tobe.light;
 
 import lombok.RequiredArgsConstructor;
 
@@ -7,11 +7,11 @@ public class BlueLightRedLight { // Context
   private final SpeedStrategy speedStrategy; // strategy
 
   // operation
-  void blueLight() {
+  public void blueLight() {
     this.speedStrategy.blueLight();
   }
 
-  void redLight() {
+  public void redLight() {
     this.speedStrategy.redLight();
   }
 }

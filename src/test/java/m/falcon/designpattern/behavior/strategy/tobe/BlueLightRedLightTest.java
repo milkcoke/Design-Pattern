@@ -1,5 +1,8 @@
 package m.falcon.designpattern.behavior.strategy.tobe;
 
+import m.falcon.designpattern.behavior.strategy.tobe.light.BlueLightRedLight;
+import m.falcon.designpattern.behavior.strategy.tobe.light.FastestSpeedStrategy;
+import m.falcon.designpattern.behavior.strategy.tobe.light.NormalSpeedStrategy;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

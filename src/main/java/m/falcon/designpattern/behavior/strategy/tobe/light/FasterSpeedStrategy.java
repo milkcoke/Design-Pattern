@@ -1,4 +1,4 @@
-package m.falcon.designpattern.behavior.strategy.tobe;
+package m.falcon.designpattern.behavior.strategy.tobe.light;
 
 public class FasterSpeedStrategy implements SpeedStrategy {
   @Override
