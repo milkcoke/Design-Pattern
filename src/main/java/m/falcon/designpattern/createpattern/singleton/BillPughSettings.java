@@ -6,6 +6,7 @@ package m.falcon.designpattern.createpattern.singleton;
 class BillPughSettings {
   private BillPughSettings() {}
 
+  // This class will not be loaded until getInstance() method is called.
   private static class BillPughSettingsHolder {
     // Create instance when called `.getInstance()`// Lazy Loading
     private static final BillPughSettings INSTANCE = new BillPughSettings();
