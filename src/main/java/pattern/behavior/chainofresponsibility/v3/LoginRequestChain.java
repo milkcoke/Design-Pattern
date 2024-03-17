@@ -1,4 +1,4 @@
-package pattern.behavior.chainofresponsibility3;
+package pattern.behavior.chainofresponsibility.v3;
 
 import java.util.ArrayList;
 import java.util.List;

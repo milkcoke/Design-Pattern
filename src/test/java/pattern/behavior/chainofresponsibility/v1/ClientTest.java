@@ -1,8 +1,7 @@
-package pattern.behavior.chainofresponsibility;
+package pattern.behavior.chainofresponsibility.v1;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pattern.behavior.chainofresponsibility.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 

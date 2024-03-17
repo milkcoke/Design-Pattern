@@ -3,10 +3,6 @@ package pattern.behavior.state;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pattern.behavior.state.OnlineCourse;
-import pattern.behavior.state.PrivateState;
-import pattern.behavior.state.PublishedState;
-import pattern.behavior.state.Student;
 
 import static org.junit.jupiter.api.Assertions.*;
 

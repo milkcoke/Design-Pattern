@@ -1,4 +1,4 @@
-package pattern.behavior.chainofresponsibility;
+package pattern.behavior.chainofresponsibility.v1;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

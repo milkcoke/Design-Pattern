@@ -1,10 +1,14 @@
-package pattern.behavior.chainofresponsibility3;
+package pattern.behavior.chainofresponsibility.v2;
 
 /**
  * Validate ID and Password according to login policy
  */
 
-class LoginRequestPolicyHandler extends AbstractLoginRequestHandler implements LoginRequestHandler {
+public class LoginRequestPolicyHandler extends AbstractLoginRequestHandler implements LoginRequestHandler {
+
+  LoginRequestPolicyHandler(LoginRequestHandler request) {
+    super(request);
+  }
 
   /**
    * @param request LoginRequest input

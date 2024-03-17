@@ -1,8 +1,7 @@
-package pattern.behavior.chainofresponsibility3;
+package pattern.behavior.chainofresponsibility.v3;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pattern.behavior.chainofresponsibility3.*;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 

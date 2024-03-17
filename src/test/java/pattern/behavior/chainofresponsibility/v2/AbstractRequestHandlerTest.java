@@ -1,9 +1,8 @@
-package pattern.behavior.chainofresponsibility2;
+package pattern.behavior.chainofresponsibility.v2;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pattern.behavior.chainofresponsibility2.*;
 
 class AbstractRequestHandlerTest {
 

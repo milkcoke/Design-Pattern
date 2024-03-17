@@ -1,4 +1,4 @@
-package pattern.behavior.chainofresponsibility;
+package pattern.behavior.chainofresponsibility.v1;
 
 public class CheckLengthRequestHandler extends RequestHandler {
     public CheckLengthRequestHandler(RequestHandler nextRequestHandler) {

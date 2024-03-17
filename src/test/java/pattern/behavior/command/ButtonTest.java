@@ -2,7 +2,6 @@ package pattern.behavior.command;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pattern.behavior.command.*;
 
 import static org.assertj.core.api.Assertions.*;
 

@@ -1,4 +1,4 @@
-package pattern.behavior.chainofresponsibility2;
+package pattern.behavior.chainofresponsibility.v2;
 
 import lombok.extern.slf4j.Slf4j;
 

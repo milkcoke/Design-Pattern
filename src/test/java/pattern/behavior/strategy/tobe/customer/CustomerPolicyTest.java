@@ -3,9 +3,6 @@ package pattern.behavior.strategy.tobe.customer;
 import pattern.behavior.strategy.domain.PurchaseHistory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pattern.behavior.strategy.tobe.customer.CustomerPolicy;
-import pattern.behavior.strategy.tobe.customer.GoldCustomerPolicy;
-import pattern.behavior.strategy.tobe.customer.SilverCustomerPolicy;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

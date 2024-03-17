@@ -1,4 +1,4 @@
-package pattern.behavior.chainofresponsibility;
+package pattern.behavior.chainofresponsibility.v1;
 
 public class CheckIdRangeRequestHandler extends RequestHandler {
     public CheckIdRangeRequestHandler(RequestHandler nextHandler) {

@@ -1,14 +1,8 @@
-package pattern.behavior.chainofresponsibility2;
+package pattern.behavior.chainofresponsibility.v3;
 
-
-// TODO: How to chain next request handler?
-public class LoginRequestRangeHandler extends AbstractLoginRequestHandler implements LoginRequestHandler {
+class LoginRequestRangeHandler extends AbstractLoginRequestHandler implements LoginRequestHandler {
   private final int MIN_LENGTH_ID = 3;
   private final int MIN_LENGTH_PASSWORD = 5;
-
-  LoginRequestRangeHandler(LoginRequestHandler loginRequestHandler) {
-    super(loginRequestHandler);
-  }
 
   /**
    * Validate login ID and Password range
