@@ -13,7 +13,7 @@ class FileProcessor {
    * @return Result of processing
    * @throws FileNotFoundException File is not found
    */
-  public int process(String filePath, IntOperation operation) throws FileNotFoundException {
+  final public int process(String filePath, IntOperation operation) throws FileNotFoundException {
     try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
 
       OptionalInt result = br.lines()

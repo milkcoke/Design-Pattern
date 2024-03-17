@@ -6,14 +6,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.OptionalInt;
 
-public abstract class AbstractFileProcessor {
+abstract class AbstractFileProcessor {
   /**
    * Process all values
    * @param filePath The target file path required to read for processing
    * @return Result of processing
    * @throws FileNotFoundException File is not found
    */
-  public int process(String filePath) throws FileNotFoundException {
+  final public int process(String filePath) throws FileNotFoundException {
     try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
 
       OptionalInt result = br.lines()

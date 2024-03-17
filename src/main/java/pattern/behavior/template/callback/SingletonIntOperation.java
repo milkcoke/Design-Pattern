@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 import java.util.function.BiFunction;
 
 @RequiredArgsConstructor
-public enum SingletonIntOperation implements IntOperation {
+enum SingletonIntOperation implements IntOperation {
   PLUS((accumulator, currentValue)-> accumulator + currentValue),
   MULTIPLY((accumulator, currentValue)-> accumulator * currentValue);
 
