@@ -1,9 +1,8 @@
-package pattern.behavior.template.callback;
+package pattern.behavior.template.callback.v1;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.ClassPathResource;
-
 import java.io.IOException;
 
 import static org.assertj.core.api.Assertions.assertThat;
