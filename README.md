@@ -33,7 +33,7 @@ Being used for creating subtype by partial factory class not knowing concrete su
 | Template Method         | 	Used to create a template method stub and defer some of the steps of implementation to the subclasses.                                          |      |
 | Mediator	               | Used to provide a centralized communication medium between different objects in a system.                                                        |      |
 | Chain of Responsibility | 	Used to achieve loose coupling in software design where a request from the client is passed to a chain of objects to process them.              | ✅    |
-| Observer	               | Useful when you are interested in the state of an object and want to get notified whenever there is any change.                                  |      |
+| Observer	               | Useful when you are interested in the state of an object and want to get notified whenever there is any change.                                  | ✅    |
 | Strategy	               | Strategy pattern is used when we have multiple algorithm for a specific task and client decides the actual implementation to be used at runtime. |      |
 | Command	                | Command Pattern is used to implement lose coupling in a request-response model.                                                                  | ✅    |
 | State	                  | State design pattern is used when an Object change it’s behavior based on it’s internal state.                                                   | ✅    |
