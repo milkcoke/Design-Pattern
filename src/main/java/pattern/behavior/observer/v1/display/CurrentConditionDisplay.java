@@ -1,12 +1,12 @@
-package pattern.behavior.observer.display;
+package pattern.behavior.observer.v1.display;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pattern.behavior.observer.Display;
-import pattern.behavior.observer.Observer;
-import pattern.behavior.observer.weatherdata.WeatherData;
+import pattern.behavior.observer.v1.Display;
+import pattern.behavior.observer.v1.Observer;
+import pattern.behavior.observer.v1.weatherdata.WeatherData;
 
-public class CurrentConditionDisplay implements Display, Observer<WeatherData> {
+class CurrentConditionDisplay implements Display, Observer<WeatherData> {
   private final Logger logger = LoggerFactory.getLogger(this.getClass());
   private final WeatherData weatherData;
   private float temperature;

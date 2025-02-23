@@ -1,8 +1,8 @@
-package pattern.behavior.observer.weatherdata;
+package pattern.behavior.observer.v1.weatherdata;
 
 import lombok.Getter;
-import pattern.behavior.observer.Subject;
-import pattern.behavior.observer.Observer;
+import pattern.behavior.observer.v1.Subject;
+import pattern.behavior.observer.v1.Observer;
 
 import java.util.LinkedList;
 import java.util.List;

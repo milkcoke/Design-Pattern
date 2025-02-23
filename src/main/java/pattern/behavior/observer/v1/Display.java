@@ -1,4 +1,4 @@
-package pattern.behavior.observer;
+package pattern.behavior.observer.v1;
 
 public interface Display {
   void display();

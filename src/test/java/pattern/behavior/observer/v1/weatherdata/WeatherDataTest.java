@@ -1,11 +1,11 @@
-package pattern.behavior.observer.weatherdata;
+package pattern.behavior.observer.v1.weatherdata;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pattern.behavior.observer.Display;
-import pattern.behavior.observer.display.CurrentConditionDisplay;
-import pattern.behavior.observer.display.ForecastDisplay;
-import pattern.behavior.observer.display.StatisticsDisplay;
+import pattern.behavior.observer.v1.Display;
+import pattern.behavior.observer.v1.display.CurrentConditionDisplay;
+import pattern.behavior.observer.v1.display.ForecastDisplay;
+import pattern.behavior.observer.v1.display.StatisticsDisplay;
 
 public class WeatherDataTest {
 
