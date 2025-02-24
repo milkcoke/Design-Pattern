@@ -8,7 +8,7 @@ import pattern.behavior.observer.v2.weatherdata.WeatherData;
 
 @Slf4j
 @ToString
-public class CurrentConditionDisplay implements Observer, Display {
+public class CurrentConditionDisplay implements Observer<WeatherData>, Display {
   private final WeatherData weatherData;
   private double currentTemperature;
   private double currentHumidity;
@@ -26,7 +26,7 @@ public class CurrentConditionDisplay implements Observer, Display {
   }
 
   @Override
-  public void onUpdate() {
+  public void onUpdate(WeatherData weatherData) {
     if (weatherData.getTemperature() == this.currentTemperature &&
       weatherData.getHumidity() == this.currentHumidity) {
       return;

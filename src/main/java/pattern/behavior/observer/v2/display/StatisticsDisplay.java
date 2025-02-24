@@ -6,7 +6,7 @@ import pattern.behavior.observer.v2.Observer;
 import pattern.behavior.observer.v2.weatherdata.WeatherData;
 
 @Slf4j
-class StatisticsDisplay implements Display, Observer {
+class StatisticsDisplay implements Display, Observer<WeatherData> {
   // It's not required to removeObserver from WeatherData since display always exist with the weatherData.
   private final WeatherData weatherData;
   private double totalTemperature;
@@ -26,7 +26,7 @@ class StatisticsDisplay implements Display, Observer {
   }
 
   @Override
-  public void onUpdate() {
+  public void onUpdate(WeatherData weatherData) {
     this.totalTemperature += weatherData.getTemperature();
     this.maxTemperature = Math.max(maxTemperature, weatherData.getTemperature());
     this.minTemperature = Math.min(minTemperature, weatherData.getTemperature());
