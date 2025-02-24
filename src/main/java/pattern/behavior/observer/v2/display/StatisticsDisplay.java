@@ -5,8 +5,11 @@ import pattern.behavior.observer.v2.Display;
 import pattern.behavior.observer.v2.Observer;
 import pattern.behavior.observer.v2.weatherdata.WeatherData;
 
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+
 @Slf4j
-class StatisticsDisplay implements Display, Observer<WeatherData> {
+class StatisticsDisplay implements Display, Observer<WeatherData>, PropertyChangeListener {
   // It's not required to removeObserver from WeatherData since display always exist with the weatherData.
   private final WeatherData weatherData;
   private double totalTemperature;
@@ -18,6 +21,15 @@ class StatisticsDisplay implements Display, Observer<WeatherData> {
   public StatisticsDisplay(WeatherData weatherData) {
     this.weatherData = weatherData;
     weatherData.registerObserver(this);
+    weatherData.registerPropertyChangeLIstener(this);
+  }
+
+  @Override
+  public void propertyChange(PropertyChangeEvent evt) {
+    if (!evt.getPropertyName().equals("temperature")) {
+      return;
+    }
+    onUpdate(this.weatherData);
   }
 
   @Override

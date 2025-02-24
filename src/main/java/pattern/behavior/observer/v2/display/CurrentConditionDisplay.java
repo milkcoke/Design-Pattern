@@ -6,9 +6,12 @@ import pattern.behavior.observer.v2.Display;
 import pattern.behavior.observer.v2.Observer;
 import pattern.behavior.observer.v2.weatherdata.WeatherData;
 
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+
 @Slf4j
 @ToString
-public class CurrentConditionDisplay implements Observer<WeatherData>, Display {
+public class CurrentConditionDisplay implements Observer<WeatherData>, Display, PropertyChangeListener {
   private final WeatherData weatherData;
   private double currentTemperature;
   private double currentHumidity;
@@ -18,6 +21,20 @@ public class CurrentConditionDisplay implements Observer<WeatherData>, Display {
     this.currentTemperature = weatherData.getTemperature();
     this.currentHumidity = weatherData.getHumidity();
     weatherData.registerObserver(this);
+    weatherData.registerPropertyChangeLIstener(this);
+  }
+
+  @Override
+  public void propertyChange(PropertyChangeEvent evt) {
+    if (!evt.getPropertyName().equals("temperature") &&
+        !evt.getPropertyName().equals("humidity")) {
+      return;
+    }
+    if (this.currentHumidity == this.weatherData.getHumidity() &&
+        this.currentTemperature == this.weatherData.getTemperature()) {
+      return;
+    }
+    onUpdate(this.weatherData);
   }
 
   @Override
@@ -27,10 +44,6 @@ public class CurrentConditionDisplay implements Observer<WeatherData>, Display {
 
   @Override
   public void onUpdate(WeatherData weatherData) {
-    if (weatherData.getTemperature() == this.currentTemperature &&
-      weatherData.getHumidity() == this.currentHumidity) {
-      return;
-    }
     this.currentTemperature = this.weatherData.getTemperature();
     this.currentHumidity = this.weatherData.getHumidity();
     this.display();
