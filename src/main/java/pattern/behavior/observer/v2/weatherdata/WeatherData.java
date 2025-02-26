@@ -11,11 +11,6 @@ import java.util.List;
 
 @Getter
 public class WeatherData implements Subject {
-  /**
-   더 이상 observers 를 다 가지고 있을 필요가 없다.
-    Observer 는 PropertyChangeSupport 에 의해 관리된다.
-   */
-  private final List<Observer> observers = new ArrayList<>();
   // Thread-Safe
   private final PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
   private double temperature;
@@ -39,22 +34,15 @@ public class WeatherData implements Subject {
 
 
   // TODO: Lapsed Listener Problem
-  //  Forgetting to deregistrate lapsed listener problem, then memory leak would occur
+  //  Forgetting to deregister lapsed listener problem, then memory leak would occur
   //  To solve this problem, we can use WeakReference
-  public void registerPropertyChangeLIstener(PropertyChangeListener propertyChangeListener) {
-    this.propertyChangeSupport.addPropertyChangeListener(propertyChangeListener);
-  }
-  public void unregisterPropertyChangeListener(PropertyChangeListener propertyChangeListener) {
-    this.propertyChangeSupport.removePropertyChangeListener(propertyChangeListener);
-  }
-
   @Override
   public void registerObserver(Observer observer) {
-    this.observers.add(observer);
+    this.propertyChangeSupport.addPropertyChangeListener(observer);
   }
 
   @Override
   public void unregisterObserver(Observer observer) {
-    this.observers.remove(observer);
+    this.propertyChangeSupport.removePropertyChangeListener(observer);
   }
 }

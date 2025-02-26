@@ -1,5 +1,7 @@
 package pattern.behavior.observer.v2;
 
-public interface Observer<T> {
+import java.beans.PropertyChangeListener;
+
+public interface Observer<T> extends PropertyChangeListener {
   void onUpdate(T subject);
 }

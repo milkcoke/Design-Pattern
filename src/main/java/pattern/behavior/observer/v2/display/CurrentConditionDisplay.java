@@ -7,11 +7,10 @@ import pattern.behavior.observer.v2.Observer;
 import pattern.behavior.observer.v2.weatherdata.WeatherData;
 
 import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 
 @Slf4j
 @ToString
-public class CurrentConditionDisplay implements Observer<WeatherData>, Display, PropertyChangeListener {
+public class CurrentConditionDisplay implements Display, Observer<WeatherData> {
   private final WeatherData weatherData;
   private double currentTemperature;
   private double currentHumidity;
@@ -21,7 +20,6 @@ public class CurrentConditionDisplay implements Observer<WeatherData>, Display, 
     this.currentTemperature = weatherData.getTemperature();
     this.currentHumidity = weatherData.getHumidity();
     weatherData.registerObserver(this);
-    weatherData.registerPropertyChangeLIstener(this);
   }
 
   @Override
