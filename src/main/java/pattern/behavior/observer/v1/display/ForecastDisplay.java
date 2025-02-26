@@ -6,7 +6,7 @@ import pattern.behavior.observer.v1.Display;
 import pattern.behavior.observer.v1.Observer;
 import pattern.behavior.observer.v1.weatherdata.WeatherData;
 
-class ForecastDisplay implements Display, Observer<WeatherData> {
+public class ForecastDisplay implements Display, Observer<WeatherData> {
   private final Logger log = LoggerFactory.getLogger(ForecastDisplay.class);
   /**
    * Should refer to the interface instead of concrete class
