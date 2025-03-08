@@ -10,6 +10,6 @@ public class DarkRoast implements Beverage {
 
   @Override
   public String getDescription() {
-    return this.getClass().getSimpleName();
+    return "다크 로스트";
   }
 }

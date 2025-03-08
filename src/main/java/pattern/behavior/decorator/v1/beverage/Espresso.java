@@ -10,6 +10,6 @@ public class Espresso implements Beverage {
 
   @Override
   public String getDescription() {
-    return this.getClass().getSimpleName();
+    return "에스프레소";
   }
 }

@@ -3,5 +3,7 @@ package pattern.behavior.decorator.v1;
 
 public interface Beverage {
   double cost();
-  String getDescription();
+  default String getDescription(){
+    return this.getClass().getSimpleName();
+  };
 }
