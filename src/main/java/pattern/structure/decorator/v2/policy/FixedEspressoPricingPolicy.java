@@ -3,21 +3,21 @@ package pattern.structure.decorator.v2.policy;
 import pattern.structure.decorator.v2.BeverageSize;
 import pattern.structure.decorator.v2.SizePricingPolicy;
 
-public class FixedDarkRoastPricingPolicy implements SizePricingPolicy {
-  private FixedDarkRoastPricingPolicy() {}
+public class FixedEspressoPricingPolicy implements SizePricingPolicy {
+  private FixedEspressoPricingPolicy() {}
   private static class Holder {
-    private static final FixedDarkRoastPricingPolicy INSTANCE = new FixedDarkRoastPricingPolicy();
+    private static final FixedEspressoPricingPolicy INSTANCE = new FixedEspressoPricingPolicy();
   }
   public static SizePricingPolicy getInstance() {
     return Holder.INSTANCE;
   }
 
-  @Override
+
+    @Override
   public double calculatePrice(BeverageSize beverageSize) {
     return switch (beverageSize) {
-      case TALL -> 0.99;
-      case GRANDE -> 1.09;
-      case VENTI -> 1.19;
+      case TALL -> 0.5;
+      default -> throw new IllegalArgumentException("Espresso only support Tall size but you provided: " + beverageSize);
     };
   }
 }

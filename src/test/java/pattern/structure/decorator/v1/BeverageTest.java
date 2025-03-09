@@ -1,8 +1,7 @@
-package pattern.behavior.decorator.v1;
+package pattern.structure.decorator.v1;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pattern.structure.decorator.v1.Beverage;
 import pattern.structure.decorator.v1.beverage.Espresso;
 import pattern.structure.decorator.v1.decorator.Mocha;
 
