@@ -2,8 +2,9 @@ package pattern.behavior.decorator.v1;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pattern.behavior.decorator.v1.beverage.Espresso;
-import pattern.behavior.decorator.v1.decorator.Mocha;
+import pattern.structure.decorator.v1.Beverage;
+import pattern.structure.decorator.v1.beverage.Espresso;
+import pattern.structure.decorator.v1.decorator.Mocha;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

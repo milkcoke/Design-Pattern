@@ -1,4 +1,4 @@
-package pattern.behavior.decorator.v1;
+package pattern.structure.decorator.v1;
 
 
 public interface Beverage {

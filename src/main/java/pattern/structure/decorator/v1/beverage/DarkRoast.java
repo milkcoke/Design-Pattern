@@ -1,6 +1,6 @@
-package pattern.behavior.decorator.v1.beverage;
+package pattern.structure.decorator.v1.beverage;
 
-import pattern.behavior.decorator.v1.Beverage;
+import pattern.structure.decorator.v1.Beverage;
 
 public class DarkRoast implements Beverage {
   @Override
