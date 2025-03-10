@@ -9,7 +9,6 @@ import pattern.structure.decorator.v2.beverage.DarkRoast;
 import pattern.structure.decorator.v2.policy.MilkPricingPolicy;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class MilkTest {
 
@@ -18,7 +17,7 @@ class MilkTest {
   void cost() {
     // given
     Beverage darkRoast = DarkRoast.withDefaultPolicy(BeverageSize.GRANDE);
-    CondimentDecorator milk = Milk.create(darkRoast, new MilkPricingPolicy());
+    CondimentDecorator milk = Milk.create(darkRoast, MilkPricingPolicy.getInstance());
     // when
     assertThat(milk.getSize()).isSameAs(BeverageSize.GRANDE);
     assertThat(milk.cost()).isEqualTo(darkRoast.cost() + 0.15);
