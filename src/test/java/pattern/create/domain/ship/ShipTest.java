@@ -1,9 +1,9 @@
 package pattern.create.domain.ship;
 
-import pattern.create.factory.BlackShipFactory;
-import pattern.create.factory.WhiteShipFactory;
-import pattern.create.factory.BlackShipNormalPartsFactory;
-import pattern.create.factory.WhiteShipNormalPartsFactory;
+import pattern.create.factory.v1.BlackShipFactory;
+import pattern.create.factory.v1.WhiteShipFactory;
+import pattern.create.factory.v1.BlackShipNormalPartsFactory;
+import pattern.create.factory.v1.WhiteShipNormalPartsFactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

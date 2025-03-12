@@ -1,7 +1,7 @@
 package pattern.create.domain.ship;
 
 import lombok.Getter;
-import pattern.create.factory.ShipFactory;
+import pattern.create.factory.v1.ShipFactory;
 
 @Getter
 public class Client {
