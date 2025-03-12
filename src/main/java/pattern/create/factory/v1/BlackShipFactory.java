@@ -1,4 +1,4 @@
-package pattern.create.factory;
+package pattern.create.factory.v1;
 
 import lombok.RequiredArgsConstructor;
 import pattern.create.domain.ship.BlackShip;
