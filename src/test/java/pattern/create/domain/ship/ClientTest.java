@@ -16,7 +16,7 @@ class ClientTest {
     void clientOrderDiTest() {
         Ship blackOrderedShip = client.orderShip(new BlackShipFactory(new BlackShipNormalPartsFactory()), "black-ship");
         Ship blackship = new BlackShipFactory(new BlackShipNormalPartsFactory()).create();
-        assertThat(blackOrderedShip.getColor()).isEqualTo("black");
+        assertThat(blackOrderedShip.getColor()).isEqualTo("Black");
         assertThat(blackship.getClass().getSimpleName()).isEqualTo("BlackShip");
     }
 
