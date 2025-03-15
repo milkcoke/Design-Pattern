@@ -1,4 +1,4 @@
-package pattern.create.factory.v3;
+package pattern.create.factory.v3.store;
 
 import pattern.create.factory.v3.domain.Pizza;
 
