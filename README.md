@@ -5,7 +5,7 @@ This repository is for studying design pattern and practicing with java source c
 | Pattern Name     | 	Description                                                                                                                 | Done | 
 |------------------|------------------------------------------------------------------------------------------------------------------------------|------|
 | Singleton        | 	The singleton pattern restricts the initialization of a class to ensure that only one instance of the class can be created. |      |
-| Factory method   | Create concrete class by concrete factory class' method. Separating concrete factory classes.                                |      |
+| Factory method   | Create concrete class by concrete factory class' method. Separating concrete factory classes.                                | ✅    |
 | Abstract Factory | Inject dependency of concrete partial class on concrete factory class for instantiating concrete partial classes like VO     | ✅    |
 | Builder	         | Creating an object step by step and a method to finally get the object instance.                                             | ✅    |
 | Prototype	       | Creating a new object instance from another similar instance and then modify according to our requirements.                  |      |
