@@ -1,6 +1,5 @@
 package pattern.create.factory.abstractfactory.v1.ingredient;
 
-import pattern.create.factory.abstractfactory.domain.ingredient.*;
 import pattern.create.factory.abstractfactory.v1.domain.ingredient.*;
 
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
