@@ -1,4 +1,4 @@
-package pattern.create.factory.factorymethod.domain;
+package pattern.create.factory.factorymethod.v1.domain;
 
 public interface Pizza {
   default String name(){

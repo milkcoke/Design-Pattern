@@ -1,6 +1,6 @@
-package pattern.create.factory.factorymethod.domain;
+package pattern.create.factory.factorymethod.v1.domain;
 
-public class ChicagoStyleVeggiePizza implements Pizza{
+public record PeperoniPizza() implements Pizza {
   @Override
   public void prepare() {
 

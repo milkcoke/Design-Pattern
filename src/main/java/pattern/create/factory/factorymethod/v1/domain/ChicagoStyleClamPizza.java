@@ -1,6 +1,6 @@
-package pattern.create.factory.factorymethod.domain;
+package pattern.create.factory.factorymethod.v1.domain;
 
-public class NYStyleClamPizza implements Pizza {
+public class ChicagoStyleClamPizza implements Pizza {
   @Override
   public void prepare() {
 

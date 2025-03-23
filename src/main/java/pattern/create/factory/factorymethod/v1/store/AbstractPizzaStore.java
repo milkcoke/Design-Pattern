@@ -1,6 +1,6 @@
-package pattern.create.factory.factorymethod.store;
+package pattern.create.factory.factorymethod.v1.store;
 
-import pattern.create.factory.factorymethod.domain.Pizza;
+import pattern.create.factory.factorymethod.v1.domain.Pizza;
 
 public abstract class AbstractPizzaStore implements PizzaStore {
   @Override
